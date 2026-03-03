@@ -55,7 +55,7 @@ def generate_wordcloud(df: pd.DataFrame) -> plt.Figure | None:
 
     if not all_text.strip():
         return None
-
+l
     # Build a custom stopword set (STOPWORDS comes from the wordcloud library)
     custom_stopwords = set(STOPWORDS)
     custom_stopwords.update(["the", "is", "and", "a", "an", "of", "to", "in",
