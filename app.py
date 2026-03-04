@@ -8,7 +8,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 import os
+from streamlit_autorefresh import st_autorefresh
 
+st_autorefresh(interval=5000, key="datarefresh")
 # ── Configuration ────────────────────────────────────────────
 CSV_FILE = "responses.csv"
 QUESTION = "What comes to your mind when you hear Artificial Intelligence?"
